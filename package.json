@@ -1,0 +1,25 @@
+{
+  "name": "http2server",
+  "version": "1.0.0",
+  "description": "Testing http/2",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michel",
+  "license": "MIT",
+  "devDependencies": {
+    "assertthat": "6.5.2",
+    "eslint": "7.32.0",
+    "eslint-config-es": "4.2.0"
+  },
+  "dependencies": {
+    "express": "4.18.1",
+    "express-http2-workaround": "1.1.4",
+    "processenv": "^3.0.9"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "ui": "tdd",
+  "bail": "true",
+  "recursive": "true",
+  "async-only": "true"
+}
