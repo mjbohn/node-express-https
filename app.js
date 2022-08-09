@@ -3,8 +3,6 @@
 /* eslint-disable no-sync */
 /* eslint-disable no-console */
 
-require('dotenv').config();
-
 const https = require('https');
 const fs = require('fs');
 const express = require('express');
