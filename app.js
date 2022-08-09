@@ -9,12 +9,12 @@ const express = require('express');
 const { processenv } = require('processenv');
 
 const app = express();
-const port = processenv('PORT', 3_000);
+const port = processenv('PORT', 8_080);
 const privkey = processenv('PRIVKEY');
 const cert = processenv('CERT');
 
 app.get('/', (req, res) => {
-  res.send('Hello Express on https!');
+  res.send('Hello Express on Docker w/ https.');
 });
 
 const options =
