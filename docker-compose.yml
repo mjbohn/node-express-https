@@ -1,0 +1,12 @@
+# docker run  --rm -p 7000:7000 -e PRIVKEY=app/keys/localhost-privkey.pem -e CERT=app/keys/localhost-cert.pem -e PORT=7000 -d --name nodehttps https
+services:
+  express_https:
+    image: https
+    build: .
+    ports:
+     - "7000:7000"
+    environment:
+      PRIVKEY: app/keys/localhost-privkey.pem
+      CERT: app/keys/localhost-cert.pem
+      PORT: 7000
+    container_name: nodehttps
